@@ -5,8 +5,8 @@ using UnityEngine;
 public class FollowPlayerX : MonoBehaviour
 {
     public GameObject plane;
-    private Vector3 offsetMainCam = new Vector3(20,0,0);
-    private Vector3 camRotation = new Vector3(0,-90,0);
+    private Vector3 offset = new Vector3(30, 0, 10);
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +16,8 @@ public class FollowPlayerX : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // transform.SetPositionAndRotation(Plane.transform.position + offsetMainCam, Quaternion.Euler(camRotation));
+        transform.position = plane.transform.position + offset;
+        // transform.SetPositionAndRotation(Plane.transform.position + offsetMainCam, Quaternion.Euler(camRotation));s
         //transform.position = player.transform.position + offset;
     }
 }
