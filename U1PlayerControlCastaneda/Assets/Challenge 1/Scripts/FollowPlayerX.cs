@@ -16,7 +16,7 @@ public class FollowPlayerX : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       // transform.SetPositionAndRotation(Plane.transform.position + offsetMainCam, Quaternion.Euler(camRotation));
+        // transform.SetPositionAndRotation(Plane.transform.position + offsetMainCam, Quaternion.Euler(camRotation));
         //transform.position = player.transform.position + offset;
     }
 }
